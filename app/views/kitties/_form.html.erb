@@ -1,0 +1,18 @@
+<%= form_for @kitty do |f| %>
+  <%= f.label :color %>
+  <%= f.text_field :color %>
+  <br>
+  <%= f.label :alive %>
+  <%= f.check_box :alive %>
+  <br>
+  <%= f.label :legs %>
+  <%= f.number_field :legs %>
+  <br>
+  <%= f.label :location %>
+  <%= f.text_field :location %>
+  <br>
+  <%= f.label :photo_url %>
+  <%= f.text_field :photo_url %>
+  <br>
+  <%= f.submit class: 'btn btn-secondary' %>
+<% end %>

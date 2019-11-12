@@ -1,0 +1,24 @@
+<h2>List of lost kitties</h2>
+<%= link_to '➕ add a lost kitty', kitties_new_path, class: 'd-inline-block pb-4' %>
+<ul>
+  <% @kitties.each do |kitty| %>
+    <li>
+      <%= kitty.alive ? '😻' : '☠️' %>
+      <%= link_to kitty_description(kitty), kitty_path(kitty) %>
+
+      <!-- A <%= kitty.color %> kitty with <%= kitty.legs %> -->
+      <!-- contetn_tag(:i, '', class: 'fas fa-alive') -->
+    </li>
+  <% end %>
+</ul>
+
+<!-- create_table "kitties", force: :cascade do |t|
+  t.string "color", null: false
+  t.string "locatoin"
+  t.integer "legs", default: 4, null: false
+  t.boolean "alive", default: true, null: false
+  t.string "photo_url"
+  t.datetime "created_at", null: false
+  t.datetime "updated_at", null: false
+end -->
+

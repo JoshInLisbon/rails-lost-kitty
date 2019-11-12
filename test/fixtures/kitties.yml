@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  color: MyString
+  locatoin: MyString
+  legs: 1
+  alive: false
+  photo_url: MyString
+
+two:
+  color: MyString
+  locatoin: MyString
+  legs: 1
+  alive: false
+  photo_url: MyString
